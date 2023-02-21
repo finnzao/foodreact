@@ -1,0 +1,14 @@
+.container {
+    height: 50px;
+    display: flex;
+    background-color: rgba(145, 145, 145, 0.459);
+    justify-content: center;
+    align-items: center;
+    color: var(--grey-opacity);
+}
+
+@media (max-width:425px) {
+    .container {
+        font-size: 0.7rem;
+    }
+}

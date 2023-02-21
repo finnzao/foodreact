@@ -1,0 +1,144 @@
+.container {
+    padding: 50px;
+    display: flex;
+    height: calc(100vh - 100px);
+}
+
+.textThanks {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.textThanks mark {
+    background-color: white;
+    color: var(--main-color);
+}
+
+.clientId {
+    font-size: 0.5;
+    opacity: 0.3;
+    margin-top: 10px;
+}
+
+.left {
+    flex: 2;
+}
+
+
+.right {
+    flex: 1;
+}
+
+.wrapper {
+    width: 90%;
+    max-height: 300px;
+    background-color: #333;
+    padding: 50px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    gap: 10px;
+}
+
+.button {
+    color: green;
+    background-color: aliceblue;
+    font-size: 1rem;
+    padding: 5px;
+}
+
+.done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notDone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: inProgress 1s ease infinite alternate;
+}
+
+.notDone .checkedIcon,
+.inProgress .checkedIcon {
+    display: none;
+}
+
+@keyframes inProgress {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.notDone {
+    display: flex;
+    opacity: 0.3;
+}
+
+
+.totalTextTitle {
+    margin-right: 10px;
+}
+
+.ArrowDown {
+    width: 100px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:720px) {
+    .container {
+        flex-direction: column;
+        height: max-content;
+        gap: 50px;
+    }
+}
+
+@media (max-width:440px) {
+
+    .button {
+        font-size: 0.8rem;
+    }
+
+    .wrapper {
+        width: 100%;
+        max-height: 300px;
+        background-color: #333;
+        padding: 20px;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .clientId {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
