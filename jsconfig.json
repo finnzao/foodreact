@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "https://foodreact-dmj5x4y7n-finnzao.vercel.app",
     "paths": {
       "@/*": ["./*"]
     }
